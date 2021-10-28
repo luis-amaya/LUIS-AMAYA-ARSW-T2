@@ -1,8 +1,9 @@
 app = (function () {
     var _module = "js/api.js";
+    var map;
 
     function _updateData(data) {
-
+        _initMap(data)
     }
     var markers;
     var bounds;
@@ -37,5 +38,13 @@ app = (function () {
         });
 
         map.fitBounds(bounds);
+    }
+
+    return {
+        connectCasesByCountry: function (country) {
+            $.getScript(_module, function () {
+                api.connectCasesByCountry(country, _updateData);
+            })
+        }
     }
 })();
