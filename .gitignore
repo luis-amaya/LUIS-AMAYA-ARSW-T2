@@ -1,2 +1,6 @@
 .metadata
 coronavirusAPITest/target
+target
+.settings
+.classpath
+.project
