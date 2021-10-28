@@ -21,9 +21,9 @@ public class CoronavirusStatsServicesImpl implements CoronavirusStatsServices {
     }
 
     @Override
-    public JSONObject getCasesByCity(String city) throws UnirestException, IOException {
-        JSONObject cityCases = httpService.connection(city);
-        return cityCases;
+    public JSONObject getCasesByCountry(String country) throws UnirestException, IOException {
+        JSONObject countryCases = httpService.connection(country);
+        return countryCases;
     }
 
 }
