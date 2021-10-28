@@ -5,9 +5,11 @@ import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
 import org.json.JSONObject;
+import org.springframework.stereotype.Service;
 
 import edu.eci.arsw.coronavirus.services.HttpConnectionService;
 
+@Service
 public class HttpConnectionServiceImpl implements HttpConnectionService {
 
     @Override
