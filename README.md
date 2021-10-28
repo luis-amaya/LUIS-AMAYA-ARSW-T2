@@ -149,6 +149,9 @@ mvn spring-boot:run
 - Maven
 - Java 8
 
+### Documentacion
+Para ver la documentacion ingresar a la carpeta target/site/apidocs
+
 ### Despliegue en Heroku
 
 ### Extensibilidad
