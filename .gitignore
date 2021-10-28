@@ -1,6 +1,10 @@
 .metadata
 coronavirusAPITest/target
-target
+target/classes
+target/generated-resources
+target/generated-test-sources
+target/maven-status
+target/test-cases
 .settings
 .classpath
 .project

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"edu.eci.arsw.coronavirus"},{"l":"edu.eci.arsw.coronavirus.cache"},{"l":"edu.eci.arsw.coronavirus.controller"},{"l":"edu.eci.arsw.coronavirus.model"},{"l":"edu.eci.arsw.coronavirus.services"},{"l":"edu.eci.arsw.coronavirus.services.impl"}];updateSearchResults();
