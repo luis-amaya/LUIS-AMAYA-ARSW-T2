@@ -9,9 +9,17 @@ import org.springframework.stereotype.Service;
 
 import edu.eci.arsw.coronavirus.services.HttpConnectionService;
 
+/**
+ * @author Luis Amaya
+ */
 @Service
 public class HttpConnectionServiceImpl implements HttpConnectionService {
 
+    /**
+     * @param city
+     * @return JSONObject
+     * @throws UnirestException
+     */
     @Override
     public JSONObject connection(String city) throws UnirestException {
         HttpResponse<String> httpResponse = Unirest

@@ -10,13 +10,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import edu.eci.arsw.coronavirus.services.CoronavirusStatsServices;
 
+/**
+ * @author Luis Amaya
+ */
 @RestController
 public class CoronavirusStatsController {
 
     @Autowired
     CoronavirusStatsServices coronavirusStatsServices;
 
-    @RequestMapping(value = "cases/{country}", method = RequestMethod.GET)
+    /**
+     * @param country Country to search Covid-19 cases
+     * @return ResponseEntity<?>
+     */
+    @RequestMapping(value = "/cases/{country}", method = RequestMethod.GET)
     public ResponseEntity<?> getCasesByCountry(@PathVariable(name = "country") String country) {
         try {
             return new ResponseEntity<>(coronavirusStatsServices.getCasesByCountry(country), HttpStatus.ACCEPTED);

@@ -128,3 +128,28 @@ document.getElementById("demo").innerHTML = "name: " + obj.name + ", age: " + ob
 </body>
 </html>
 ```
+## Solve
+
+### Diseño:
+El diseño de la aplicacion se basa en REST, el cual está consumiendo la API de COVID-19 de RapidAPI, desde la cual se extraen los datos brindados por esta y mostrarlos de manera amable y organizada en el front.
+
+### Instrucciones de Ejecucion Local
+1.  Clonar el repositorio, corriendo el siguiente comando desde el terminal que desee.
+````sh
+git clone https://github.com/luis-amaya/LUIS-AMAYA-ARSW-T2
+````
+2. Compilar y descargar las dependencias necesarias
+````sh
+mvn clean install
+mvn package
+mvn spring-boot:run
+````
+
+### Prerequisitos
+- Maven
+- Java 8
+
+### Despliegue en Heroku
+
+### Extensibilidad
+Lo que hace extensible es el bajo acoplamiento entre las clases permitiendo la creacion o insercion de nuevas funcionalidades que requieran entidades e implementaciones nuevas. Además que el backend es fácilmente adaptable a un frontend diferente, permitiendo adaptarlo a un posible aplicativo móvil.
